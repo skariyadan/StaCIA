@@ -8,6 +8,7 @@ if f.mode == 'r':
    database = f.readline()
    pwd = f.readline()
 
+
 # Connect to the database
 connection = pymysql.connect(host='localhost',
                              user=database.rstrip(" \n"),
@@ -51,6 +52,9 @@ try:
          name = i.span.a.get_text().strip(" \n\t")
          name = re.sub(r', Cal Poly','',name)
          if name in clubs:
+            fee = 'No'
+            if len(i.find('span',class_='contribute').find_all('a')) > 0:
+               fee = 'Yes'
             span = i.div.find_all('span')
             sqlpeople = "insert into clubXpeople (person, phoneNum, email, position, club) values (%s, %s, %s, %s, %s)"
             pres = (span[1].get_text().strip(" \n\t"), span[3].get_text().strip(" \n\t"), span[5].get_text().strip(" \n\t"), 'President', name)
@@ -64,8 +68,8 @@ try:
             ctype = span[17].get_text().strip(" \n\t")
             des = span[19].get_text().strip(" \n\t")
             email= span[21].get_text().strip(" \n\t")
-            club = (name, clubs[name]['dep'], box, college, ctype, des, email, clubs[name]['homepage'])
-            sqlclub = "insert into club (name, department, box, college, type, description, email, homepage) values (%s, %s, %s, %s, %s, %s, %s, %s)"
+            club = (name, clubs[name]['dep'], box, college, ctype, des, email, clubs[name]['homepage'], fee)
+            sqlclub = "insert into club (name, department, box, college, type, description, email, homepage, fee) values (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
             mycursor.execute(sqlclub, club)
             connection.commit()
 
@@ -108,7 +112,29 @@ try:
 
       # lets get info for officers --> every club hp is different, so got scrape each differently
       #ACM - only hs fb
+      f = open("acm_fb_about.html","r")
+      text = f.read()
+      soup = BeautifulSoup(text,"html.parser")
+      posts = soup.find(text="New posts today")
+      postsToday =posts.parent.previous_sibling.get_text()
+      postsMonth=posts.parent.next_sibling.get_text().replace(' in the last 30 days', '')
+      mem = soup.find(text="Members")
+      memTot=mem.parent.previous_sibling.get_text()
+      memMonth=mem.parent.next_sibling.get_text().replace(' in the last 30 days', '')
+      mycursor.execute("insert into clubFBxActivity (club, postsToday, postsMonth, members, joinedInMonth, retrievedDate) values (%s, %s, %s, %s, %s, %s)", ('Association for Computing Machinery', postsToday, postsMonth, memTot, memMonth, '6/6/2019'))
+
       #Data Science - only has fb
+      f = open("datasci_fb_about.html","r")
+      text = f.read()
+      soup = BeautifulSoup(text,"html.parser")
+      posts = soup.find(text="New posts today")
+      postsToday =posts.parent.previous_sibling.get_text()
+      postsMonth=posts.parent.next_sibling.get_text().replace(' in the last 30 days', '')
+      mem = soup.find(text="Members")
+      memTot=mem.parent.previous_sibling.get_text()
+      memMonth=mem.parent.next_sibling.get_text().replace(' in the last 30 days', '')
+      mycursor.execute("insert into clubFBxActivity (club, postsToday, postsMonth, members, joinedInMonth, retrievedDate) values (%s, %s, %s, %s, %s, %s)", ('Data Science Club', postsToday, postsMonth, memTot, memMonth, '6/6/2019'))
+
       #Game Dev - events, officers, and projects
       url = "http://www.cpgd.org/"
       myRequest = requests.get(url)
@@ -137,6 +163,17 @@ try:
       connection.commit()
 
       # Linux User group -meetings and projects, resources
+      f = open("cplug_fb_about.html","r")
+      text = f.read()
+      soup = BeautifulSoup(text,"html.parser")
+      posts = soup.find(text="New posts today")
+      postsToday =posts.parent.previous_sibling.get_text()
+      postsMonth=posts.parent.next_sibling.get_text().replace(' in the last 30 days', '')
+      mem = soup.find(text="Members")
+      memTot=mem.parent.previous_sibling.get_text()
+      memMonth=mem.parent.next_sibling.get_text().replace(' in the last 30 days', '')
+      mycursor.execute("insert into clubFBxActivity (club, postsToday, postsMonth, members, joinedInMonth, retrievedDate) values (%s, %s, %s, %s, %s, %s)", ('Linux Users Group', postsToday, postsMonth, memTot, memMonth, '6/6/2019'))
+
       url = "http://cplug.org/projects.html"
       myRequest = requests.get(url)
       soup = BeautifulSoup(myRequest.text,"html.parser")
@@ -150,8 +187,23 @@ try:
       mycursor.execute("insert into clubXevent (event, date, club) values (%s, %s, %s)", ('Facebook Tech Talk', 'October 11th', 'lobby of building 20A'))
       connection.commit()
 
-      # Roborodentia -  not sure how to pull info from robo
-
+      # Roborodentia -  officers
+      url = "http://roborodentia.calpoly.edu/staff/"
+      myRequest = requests.get(url)
+      soup = BeautifulSoup(myRequest.text,"html.parser")
+      n = 1
+      name = ''
+      pos = ''
+      email = ''
+      for i in soup.find_all('td'):
+         if n % 3 == 1:
+            name = i.a.get_text().strip()
+         if n%3 == 2:
+            pos = i.get_text().strip()
+         if n%3 == 0:
+            email = i.a.get_text().strip().replace('(place an \'at\' sign here)', '@')
+            mycursor.execute("insert into clubXpeople (person, position, email,club) values (%s,%s, %s, %s)", (name, pos, email,'Roborodentia'))
+         n= n+1
       #SLO-hacks - sponsors, projects (tracks), past events
       url = "https://www.slohacks.com/"
       myRequest = requests.get(url)
@@ -173,6 +225,16 @@ try:
               mycursor.execute("insert into clubXevent (event, date, club) values (%s, %s, %s)", (event, date, 'SLO Hacks'))
 
       # STAT Club - officer info 
+      f = open("stat_fb_about.html","r")
+      text = f.read()
+      soup = BeautifulSoup(text,"html.parser")
+      posts = soup.find(text="New posts today")
+      postsToday =posts.parent.previous_sibling.get_text()
+      postsMonth=posts.parent.next_sibling.get_text().replace(' in the last 30 days', '')
+      mem = soup.find(text="Members")
+      memTot=mem.parent.previous_sibling.get_text()
+      memMonth=mem.parent.next_sibling.get_text().replace(' in the last 30 days', '')
+      mycursor.execute("insert into clubFBxActivity (club, postsToday, postsMonth, members, joinedInMonth, retrievedDate) values (%s, %s, %s, %s, %s, %s)", ('STAT Club', postsToday, postsMonth, memTot, memMonth, '6/6/2019'))
       url = "https://statistics.calpoly.edu/content/statclub"
       myRequest = requests.get(url)
       soup = BeautifulSoup(myRequest.text,"html.parser")
@@ -183,6 +245,16 @@ try:
       connection.commit()
  
       # White hat - officers, projects, resources
+      f = open("whitehat_fb_about.html","r")
+      text = f.read()
+      soup = BeautifulSoup(text,"html.parser")
+      posts = soup.find(text="New posts today")
+      postsToday =posts.parent.previous_sibling.get_text()
+      postsMonth=posts.parent.next_sibling.get_text().replace(' in the last 30 days', '')
+      mem = soup.find(text="Members")
+      memTot=mem.parent.previous_sibling.get_text().replace(',','')
+      memMonth=mem.parent.next_sibling.get_text().replace(' in the last 30 days', '')
+      mycursor.execute("insert into clubFBxActivity (club, postsToday, postsMonth, members, joinedInMonth, retrievedDate) values (%s, %s, %s, %s, %s, %s)", ('White Hat', postsToday, postsMonth, memTot, memMonth, '6/6/2019'))
       url = "https://thewhitehat.club/officers"
       myRequest = requests.get(url)
       soup = BeautifulSoup(myRequest.text,"html.parser")
@@ -204,6 +276,16 @@ try:
       connection.commit()
 
       #WISH
+      f = open("wish_fb_about.html","r")
+      text = f.read()
+      soup = BeautifulSoup(text,"html.parser")
+      posts = soup.find(text="New post today")
+      postsToday =posts.parent.previous_sibling.get_text()
+      postsMonth=posts.parent.next_sibling.get_text().replace(' in the last 30 days', '')
+      mem = soup.find(text="Members")
+      memTot=mem.parent.previous_sibling.get_text()
+      memMonth=mem.parent.next_sibling.get_text().replace(' in the last 30 days', '')
+      mycursor.execute("insert into clubFBxActivity (club, postsToday, postsMonth, members, joinedInMonth, retrievedDate) values (%s, %s, %s, %s, %s, %s)", ('Women Involved in Software and Hardware', postsToday, postsMonth, memTot, memMonth, '6/6/2019'))
       url = "https://web.calpoly.edu/~wish/pages/officers.html"
       myRequest = requests.get(url)
       soup = BeautifulSoup(myRequest.text,"html.parser")
@@ -212,5 +294,8 @@ try:
          tuplep=(strs[0].strip(), strs[2].strip(), 'Women Involved in Software and Hardware')
          mycursor.execute("insert into clubXpeople (person, position, club) values (%s, %s, %s)", tuplep)
       connection.commit()
+      print(clubs)
+
+     
 finally:
     connection.close()
