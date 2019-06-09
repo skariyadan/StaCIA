@@ -1,0 +1,15 @@
+use bvandehe466;
+delete from club;
+delete from clubXpeople;
+delete from clubXevent;
+delete from clubXsocialmedia;
+delete from clubIGxInfo;
+delete from clubXproject;
+delete from clubFBxActivity;
+delete from tutoringXurl;
+delete from dataXtutoring;
+delete from csseTutoringXinfo;
+delete from csseXtutors;
+delete from clubXresource;
+delete from clubXsponsor;
+delete from tutoringXcourse;
