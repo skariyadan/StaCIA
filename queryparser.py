@@ -67,7 +67,7 @@ def parseQuery(input, questions, classifier):
             else:
                 iis += 1
                 idq += 1
-        parsed["variable"] = variable
+        parsed["variables"] = variable
         return parsed
 
 '''
