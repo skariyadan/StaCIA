@@ -1,18 +1,18 @@
 import pymysql.cursors, time,re, requests, random, os, sys
 
 f = open("credentials.txt","r")
-    if f.mode == 'r':
-       database = f.readline()
-       pwd = f.readline()
-       fbuser = f.readline()
-       fbpwd = f.readline()
+if f.mode == 'r':
+    database = f.readline()
+    pwd = f.readline()
+    fbuser = f.readline()
+    fbpwd = f.readline()
 
-    connection = pymysql.connect(host='localhost',
-                                 user=database.rstrip(" \n"),
-                                 password=pwd.rstrip(" \n"),
-                                 db=database.rstrip(" \n"),
-                                 charset='utf8mb4',
-                                 cursorclass=pymysql.cursors.DictCursor)
+connection = pymysql.connect(host='localhost',
+                             user=database.rstrip(" \n"),
+                             password=pwd.rstrip(" \n"),
+                             db=database.rstrip(" \n"),
+                             charset='utf8mb4',
+                             cursorclass=pymysql.cursors.DictCursor)
 
 # store all the mysql query into a list 
 def listofquery():
