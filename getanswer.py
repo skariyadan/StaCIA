@@ -15,7 +15,7 @@ f = open("credentials.txt","r")
                                  cursorclass=pymysql.cursors.DictCursor)
 
 # store all the mysql query into a list 
-def listofquery():
+def listOfQuery():
     f = open("mysql.txt","r")
     querylist = []
     for line in f.readlines():
@@ -36,24 +36,24 @@ def replace_response_with_list(response, word_list):
    return response
 
 # give a native response to a question that we know the answer
-def normal_answer(query):
+def normal_answer(query, questions):
 
     question_num = query["question"]
     question_var = query["variables"] # a dictionary in the format {“varname”: [variable taken from the input query]}
     listofkeys = list(question_var) # a list of variable names
-    listofquery = listofquery() # a list of mysql query in the order of the questions
+    listofquery = listOfQuery() # a list of mysql query in the order of the questions
     sql = listofquery[question_num-1] # the sql command for the query
-    reponse = questions[question_num][1] # the response format from the question dictionary
+    response = questions[question_num][1] # the response format from the question dictionary
 
     for item in listofkeys:
         if item in sql:
             sql.replace(item, question_var[item]) #should be a whole sql command after replace
         if item in response:
-            reponse.replace('['+item+']', question_var[item]) 
+            response.replace('['+item+']', question_var[item])
 
     # count number of varibales in the response are coming from tables
     cnt = 0
-    for char in reponse:
+    for char in response:
         if char == '[':
             cnt += 1
 
@@ -63,13 +63,13 @@ def normal_answer(query):
 
             if cnt == 1 and 'How many' not in questions[question_num][0]: 
                 result = ''
-                response = response.split('[')
+                res = response.split('[')
                 for row in cursor:
                     result += str(row[(cursor.description)[0][0]]) + ', '
                 result = result[:-2]
                 response = res[0] + result + response.split(']')[1] 
             
-            elif cnt == 1 && 'How many' in questions[question_num][0]:
+            elif cnt == 1 and 'How many' in questions[question_num][0]:
                 countrow = 0
                 for row in cursor:
                     countrow +=1
@@ -90,12 +90,12 @@ def normal_answer(query):
 
     return response
     
-def getanswer(query):
+def getanswer(query, question):
     
     response_string = ''
 
     if query['signal'] == 'Normal':
-        response_string = normal_answer(query) 
+        response_string = normal_answer(query, question)
 
     elif query['signal'] == 'Unknown':
         response_string = "Sorry, I don't know the answer to this!"
