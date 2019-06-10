@@ -41,6 +41,7 @@ def normal_answer(query, questions):
     question_num = query["question"]
     question_var = query["variables"] # a dictionary in the format {“varname”: [variable taken from the input query]}
     listofkeys = list(question_var) # a list of variable names
+    print(listofkeys)
     listofquery = listOfQuery() # a list of mysql query in the order of the questions
     sql = listofquery[question_num-1] # the sql command for the query
     response = questions[question_num][1] # the response format from the question dictionary
