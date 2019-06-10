@@ -60,7 +60,7 @@ def normal_answer(query):
                 pass # working on this
 
     except BaseException as e:
-       print(e)
+       return "Sorry, I don't know the answer to this!"
 
     return response
     
@@ -72,18 +72,9 @@ def getanswer(query):
         response_string = normal_answer(query) 
 
     elif query['signal'] == 'Unknown':
-        response_string = 'Sorry, I have no idea.\n'
-
-    elif query['signal'] == 'Question':
-        return 0
+        response_string = "Sorry, I don't know the answer to this!"
 
     elif query['signal'] == 'End':
         response_string = 'Glad to help you today! Goodbye!\n'
 
-    elif query['signal'] == 'Error':
-        return 0
-    
-    else:
-        return 0
-
-    print(response_string)
+    return response_string
