@@ -39,13 +39,13 @@ def parseQuery(input, questions, classifier):
     print(label)
     print(probLabel)
     print(questions[label])
-    if probLabel < .3:
+    if probLabel < .1:
         return {"signal":"Unknown"}
     else:
         parsed = {"signal": "Normal", "question":label}
         variable = {}
         inputSplit = input.split(" ")
-        detQuestion = questions[label][0].lower().split(" ")
+        detQuestion = questions[label][0].split(" ")
         idq = 0
         iis = 0
         var = ""
@@ -54,12 +54,14 @@ def parseQuery(input, questions, classifier):
         while iis < len(inputSplit) and idq < len(detQuestion):
             if "[" in detQuestion[idq] and "]" in detQuestion[idq]:
                 varname = detQuestion[idq][1:-1]
+                if "]" in varname:
+                    varname = varname[:-1]
                 idq += 1
                 if idq >= len(detQuestion):
                     var = " ".join(inputSplit[iis:])[:-1]
                 else:
-                    stop = detQuestion[idq]
-                    while stop not in inputSplit[iis] and iis < len(inputSplit):
+                    stop = detQuestion[idq].lower()
+                    while stop not in inputSplit[iis].lower() and iis < len(inputSplit):
                         var += inputSplit[iis] + " "
                         iis += 1
                 variable[varname] = var.strip()

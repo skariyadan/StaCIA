@@ -65,7 +65,7 @@ class StaciaBot(irc.bot.SingleServerIRCBot):
         elif cmd == "usage":
             c.privmsg(self.channel, "Enter your question and I'll be happy to provide you an answer! Just tell me bye when you're done!")
         else:
-            parsedQuery = queryparser.parseQuery(cmd, question, classifier)
+            parsedQuery = queryparser.parseQuery(cmd, self.question, self.classifier)
             # response = getanswer(parsedQuery)
             # print(response)
 def main():
