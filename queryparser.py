@@ -36,10 +36,40 @@ def parseQuery(input, questions, classifier):
     label = classifier.classify(getFeatures(input.lower()))
     probs = classifier.prob_classify(getFeatures(input.lower()))
     probLabel = probs.prob(label)
+    print(label)
+    print(probLabel)
+    print(questions[label])
     if probLabel < .3:
         return {"signal":"Unknown"}
     else:
-        return {"signal": "End"}
+        parsed = {"signal": "Normal", "question":label}
+        variable = {}
+        inputSplit = input.split(" ")
+        detQuestion = questions[label][0].lower().split(" ")
+        idq = 0
+        iis = 0
+        var = ""
+        varname = ""
+        stop = ""
+        while iis < len(inputSplit) and idq < len(detQuestion):
+            if "[" in detQuestion[idq] and "]" in detQuestion[idq]:
+                varname = detQuestion[idq][1:-1]
+                idq += 1
+                if idq >= len(detQuestion):
+                    var = " ".join(inputSplit[iis:])[:-1]
+                else:
+                    stop = detQuestion[idq]
+                    while stop not in inputSplit[iis] and iis < len(inputSplit):
+                        var += inputSplit[iis] + " "
+                        iis += 1
+                variable[varname] = var.strip()
+                var = ""
+                varname = ""
+            else:
+                iis += 1
+                idq += 1
+        parsed["variable"] = variable
+        return parsed
 
 '''
 createModel(): creates and trains a model to classify the question
@@ -47,6 +77,9 @@ createModel(): creates and trains a model to classify the question
 
 def createModel(questions):
     labeled = []
+    for k, v in questions.items():
+        labeled.append((v[0].lower(), k))
+    '''
     i = 0
     f = open("train.txt", "r")
     for line in f.readlines():
@@ -55,6 +88,7 @@ def createModel(questions):
         for s in split:
             labeled.append((s.lower(), i))
     f.close()
+    '''
     labeled = [(getFeatures(q), num) for (q, num) in labeled]
     classifier = nltk.NaiveBayesClassifier.train(labeled)
     return classifier

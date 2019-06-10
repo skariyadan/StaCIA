@@ -110,8 +110,12 @@ A1|Where can I find assistance for working with data?|You can get assistance at 
 A1|When can I find assistance for working with data?|You can get assistance on [Day] at [Time]-[Time],....
 A1|What subjects do the data services peer assistants help with?|Data services peer assistants can help with [Data-Subj],....
 A1|How do you sign up to be a [Department] tutor?|Contact [Faculty] at [Email].
+A1|What are the [Department] clubs?|The following clubs are in the [Department] department: [Club], ….
+A1|What are the clubs offered by [Department]?|The following clubs are in the [Department] department: [Club], ….
+A1|What number clubs are in [Department]?|There are [Number] clubs.
+A1|What [Department] department clubs does [Faculty] advise?|[Faculty] is the advisor of the [Club] club.
 
-[Department]: either CSSE or STAT 
+[Department]: either CSSE or STAT
 [Club]: a list of clubs
 [Number]: a number of items
 [Club]: a single club in the CSSE or STAT department
@@ -130,7 +134,7 @@ A1|How do you sign up to be a [Department] tutor?|Contact [Faculty] at [Email].
 [CSSE-Club]: A club from the CSSE clubs
 [Followers]: the number of followers on the facebook/instagram page
 [Posts]: the number of posts on the facebook/instagram page
-[Event]:  event(s) for a club 
+[Event]:  event(s) for a club
 [Position]: a club position
 [Person]: a person’s name
 [Day]: day of the week

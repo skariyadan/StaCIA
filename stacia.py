@@ -17,9 +17,8 @@ while endsignal == 0:
     query = input("> ").strip()
     if "bye" in query.lower():
         endsignal = 1
+        break
     parsedQuery = queryparser.parseQuery(query, question, classifier)
-    if parsedQuery["signal"] == "End":
-        endsignal = 1
     print(parsedQuery) # just for now
     # response = getanswer(parsedQuery)
     # print(response)
