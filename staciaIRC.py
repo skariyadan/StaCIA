@@ -20,10 +20,6 @@ class StaciaBot(irc.bot.SingleServerIRCBot):
 
     def on_welcome(self, c, e):
         c.join(self.channel)
-        self.connection.privmsg(self.channel,
-                                "Welcome to the StaCIA Bot to help with your questions on tutoring and clubs for both CSSE and STAT in Cal Poly!")
-        self.connection.privmgs(self.channel,
-                                "Enter your question and I'll be happy to provide you an answer! Just tell me bye when you're done!")
 
     def on_privmsg(self, c, e):
         self.do_command(e, e.arguments[0])
