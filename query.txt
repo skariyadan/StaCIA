@@ -16,12 +16,12 @@ A1|How many people follow the [Stat-Club] club’s Facebook page?|[Followers] fo
 A1|Are there any new posts on the [Stat-Club] club’s Facebook page?|There are [Posts] new posts today and [Posts] posts in the past 30 days on the [Stat-Club] club’s Facebook page.
 A1|What is the next event for [Stat-Club]?|The next event is [Stat-Event] on [Date].
 A1|When is the next event for [Stat-Club]?|The next event is [Stat-Event] on [Date].
-A1|Is there an event for [Stat-Club] on [Date]?|(No. | Yes. There is [Stat-Event].)
+A1|Is there an event for [Stat-Club] club on [Date]?|(No. / Yes. There is [Stat-Event].)
 A1|Are there any upcoming events for the [CSSE-Club] club in the CSSE department?|(No. / Yes. The next event is [CSSE-Event] on [Date].)
 A1|How many people follow the [CSSE-Club] club’s Facebook page?|[Followers] follow the [CSSE-Club] club’s Facebook page.
 A1|What is the next event for [CSSE-Club]?|The next event is [CSSE-Event] on [Date].
 A1|When is the next event for [CSSE-Club]?|The next event is [CSSE-Event] on [Date].
-A1|Is there an event for [CSSE-Club] on [Date]?(No. | Yes. There is [CSSE-Event].)
+A1|Is there an event for [CSSE-Club] on [Date]?|(No. / Yes. There is [CSSE-Event].)
 A1|Who are the officers for [Stat-Club] club?|The officers for [Stat-Club] are: [Person] ([Position]),….
 A1|Who are the officers for [CSSE-Club] club?|The officers for [CSSE-Club] are: [Person] ([Position]),….
 A1|When are the meetings for [Stat-Club] club?|The meetings are [Day] at [Time] in room [Room].
@@ -33,7 +33,7 @@ A1|Does [CSSE-Club] have any projects?|(No. / Yes. The project(s) is (are) [Proj
 A1| Where is [Stat-Club] located?|[Stat-Club] is located in [Room].
 A1|Where is [CSSE-Club] located?|[CSSE-Club] is located in [Room].
 A1|Does [Stat-Club] have their own room?|(No. / Yes.)
-A1|Does [CSSE-Club] have their own room? (No. / Yes.)
+A1|Does [CSSE-Club] have their own room?|(No. / Yes.)
 A1|Does [Stat-Club] have any sponsors?|(No. / Yes. They are [Sponsor],….)
 A1|Does [CSSE-Club] have any sponsors?|(No. / Yes. They are [Sponsor],….)
 A1|What are the technical tracks option for SLO Hacks club?|They are [Tracks].
@@ -97,7 +97,7 @@ A1|What STAT courses have private tutoring available?|[STAT-Course],….
 A1|Does the STAT department offer private tutoring for [Stat-Course]?| (No. / Yes.)
 A1|Who are the private tutors available for the STAT department?|The private tutors available for the STAT department are [Person] at [Email],….
 A1|Is [Person] available as a private tutor for Statistics?|(No. / Yes.)
-A1|Are there any private tutors for [Stat-Course]?|(No. | Yes. [Person] at [Email],….
+A1|Are there any private tutors for [Stat-Course]?|(No. | Yes. [Person] at [Email],….)
 A1|What is the contact information of private Statistics tutors that teach [Stat-Course]?|(No one tutors for that course. / The tutors are [Person] at [Email],….)
 A1|How many private Statistics tutors are available?|There are [Number] private statistics tutors available.
 A1|Where is the free Statistics tutoring located?|Free Statistics Tutoring is offered at room [Room],….

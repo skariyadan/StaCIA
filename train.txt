@@ -1,0 +1,112 @@
+What clubs does the [Department] department offer?| What are the clubs offered by [Department]?| What are the [Department] clubs?|What clubs are offered by [Department]?
+How many clubs are in the [Department] department?| What number clubs are in [Department]?
+Does [Faculty] advise any clubs in the [Department] department?| What [Department] department clubs does [Faculty] advise?
+Who is the advisor of the [Club] club?| Who advises [Club]?| Who's the advisor of [Club] club?
+What is the email of the President of the [Club] club?| What's the email of the [Club] president?
+What type of club is the [Club] club?| What type of club is [Club]?
+What types of clubs does the [Department] department offer?|What kinds of club does the [Department] department offer?
+What is the email for the advisor of the [Club] club?|What's the email for the advisor of [Club]?|What's the [Club] club's advisor's email?
+What is the [Club] club?| What's the [Club] club?
+What is the homepage of the [Club] club?| What's the [Club] club homepage?
+What is the box number of the [Club] club?|What's the box number of [Club] club?
+What is the email for the [Club] club?| What's the email for [Club] club?
+What are the social media accounts for the [Club] club?|What's the social media for [Club] club?|What's the [Club] club's Instagram?|What's the [Club] club's Facebook?|Where can I follow [Club] club?
+Are there any upcoming events for the [Stat-Club] club in the STAT department?|What are the upcoming events for [Stat-Club]?|Are there any upcoming events for the [Stat-Club] club?|When is the next event for the [Stat-Club] club?
+How many people follow the [Stat-Club] club’s Facebook page?|How many followers does the [Stat-Club] club's Facebook page have?
+Are there any new posts on the [Stat-Club] club’s Facebook page?|What are the latest posts on the [Stat-Club] club's Facebook page?
+What is the next event for [Stat-Club]?|What's the next event for [Stat-Club]?|What's the upcoming event for [Stat-Club]?
+When is the next event for [Stat-Club]?|When's the next event for [Stat-Club]?|When's the upcoming event for [Stat-Club]?
+Is there an event for [Stat-Club] club on [Date]?|On [Date], is there an event for [Stat-Club]?|What event for [Stat-Club] is on [Date]?
+Are there any upcoming events for the [CSSE-Club] club in the CSSE department?|What are the upcoming events for [CSSE-Club]?|Are there any upcoming events for [CSSE-Club]?|When is the next event for the [CSSE-Club] club?
+How many people follow the [CSSE-Club] club’s Facebook page?|How many followers does the [CSSE-Club] club's Facebook page have?
+What is the next event for [CSSE-Club]?|What's the next event for [CSSE-Club]?|What's the upcoming event for [CSSE-Club]?
+When is the next event for [CSSE-Club]?|When's the next event for [CSSE-Club]?|When's the upcoming event for [CSSE-Club]?
+Is there an event for [CSSE-Club] on [Date]?|On [Date], is there an event for [CSSE-Club]?|What event for [CSSE-Club] is on [Date]?
+Who are the officers for [Stat-Club] club?|Who are the [Stat-Club] club officers?
+Who are the officers for [CSSE-Club] club?|Who are the [CSSE-Club] club officers?
+When are the meetings for [Stat-Club] club?|When does [Stat-Club] club meet?
+When are the meetings for [CSSE-Club] club?|When does [CSSE-Club] club meet?
+When is the next meeting for [Stat-Club] club?|When is the upcoming meeting for [Stat-Club] club?
+When is the next meeting for [CSSE-Club] club?|When is the upcoming meeting for [CSSE-Club] club?
+Does [Stat-Club] have any projects?|Are there any [Stat-Club] projects?|What are the [Stat-Club] projects?
+Does [CSSE-Club] have any projects?|Are there any [CSSE-Club] projects?|What are the [CSSE-Club] projects?
+Where is [Stat-Club] located?|Where is [Stat-Club]?
+Where is [CSSE-Club] located?|Where is [CSSE-Club]?
+Does [Stat-Club] have their own room?
+Does [CSSE-Club] have their own room?
+Does [Stat-Club] have any sponsors?|Who are the [Stat-Club] sponsors?
+Does [CSSE-Club] have any sponsors?|Who are the [CSSE-Club] sponsors?
+What are the technical tracks option for SLO Hacks club?|What are the technical tracks for SLO Hacks club?|What technical tracks are available for SLO Hacks club?
+What college is affiliated with the [Club] club?|What department is affiliated with the [Club] club?|What department does [Club] club belong to?
+What are some past events of the [Stat-Club] club?|What events did [Stat-Club] club have in the past?
+What are some past events of the [CSSE-Club] club?|What events did [CSSE-Club] club have in the past?
+What was the last event of the [Stat-Club] club?|What was the latest event that [Stat-Club] club had?
+What was the last event of the [CSSE-Club] club?|What was the latest event that [CSSE-Club] club had?
+When was the last event of [Stat-Club] club?|When was the latest event that [Stat-Club] club had?
+When was the last event of [CSSE-Club] club?|When was the latest event that [CSSE-Club] club had?
+Who is the president of the [Club] club?|What's the name of the president of [Club] club?
+Who is the vice president of the [Club] club?|What's the name of the vice president of [Club] club?
+Who is the secretary of the [Club] club?|What's the name of the secretary of [Club] club?
+Who is the treasurer of the [Club] club?|What's the name of the treasurer of [Club] club?
+How can I contact [Club]?|How do I reach out to [Club] club?
+Are there any [Type] clubs in the [Department] department?|What are the [Type] clubs in [Department]?
+Is [Person] a President of any clubs?|Is [Person] the president of a club?
+What is the phone number of the President of the [Club] club?|What's the phone number of the [Club] club president?
+What is the phone number of the Advisor of the [Club] club?|What's the phone number of the [Club] club advisor?
+How many people posted on the [Stat-Club] club’s Facebook page in the past 30 days?|How many people posted recently on the [Stat-Club] club's Facebook page?
+How many people joined the [Stat-Club] club’s Facebook page in the past 30 days?|How many people recently joined the [Stat-Club] club's Facebook page?
+How many people posted on the [CSSE-Club] club’s Facebook page in the past 30 days?|How many people posted recently on the [CSSE-Club] club's Facebook page?
+How many people joined the [CSSE-Club] club’s Facebook page in the past 30 days?|How many people posted recently on the [CSSE-Club] club's Facebook page?
+What resources are used by the [Club] club?|What resources does [Club] club use?
+Is there an Instagram account for the [CSSE-Club] club?|What is the [CSSE-Club] Instagram?|Where do I follow [CSSE-Club] on Instagram?
+How many followers does the [CSSE-Club] club’s Instagram account have?|What number followers does the [CSSE-Club] club have on Instagram?
+How many accounts does the [CSSE-Club]’s Instagram follow?|How many people does the [CSSE-Club] club's Instagram follow?
+Is there an Instagram account for the [Stat-Club] club?|What's the [Stat-Club] Instagram?|Where do I follow [Stat-Club] on Instagram?
+How many followers does the [Stat-Club] club’s Instagram account have?|What number followers does the [Stat-Club] club have on Instagram?
+Does [Club] and [Club] have any events together?|Did [Club] and [Club] do any events together?
+Does the [CSSE-Club] have an office?
+Where is the office of the [CSSE-Club]?|Where is the [CSSE-Club] office?
+How many officers does the [CSSE-Club] have?|What number officer positions does [CSSE-Club] have?
+Where will the next event of the [CSSE-Club] be held?|Where is the next [CSSE-Club] event?|Where is the upcoming [CSSE-Club] event?
+When will the next event of the [CSSE-Club] be held?|When is the next [CSSE-Club] event?|When is the upcoming [CSSE-Club] event?
+Can men join the WISH club?
+Is there any club fee for joining the [CSSE-Club]?|Are there club dues to join [CSSE-Club]?
+Is there any club fee for joining the [Stat-Club]?|Are there club dues to join [Stat-Club]?
+What is the next event of the [CSSE-Club]?|What is the upcoming event for [CSSE-Club]?
+When does the CSSE tutoring start?|When does CSSE tutoring begin?
+When does the CSSE tutoring end?|When does CSSE tutoring finish?
+How many events does the [CSSE-Club] have next week?|How many [CSSE-Club] events are next week?
+Is there an email subscription for the [CSSE-Club]?|Can I get emails from [CSSE-Club]?
+What courses does the CSSE department offer tutoring for?|What Computer Science courses have tutoring offered?
+Does the CSSE department offer tutoring for [CSSE-Course]?|Does [CSSE-Course] have tutoring available?|Is there tutoring available for [CSSE-Course]?
+Is there tutoring for [CSSE-Course] on [Date]?|Can I get tutoring for [CSSE-Course] on [Date]?
+When is tutoring available for [CSSE-Course] on [Date]?|When can I get tutoring for [CSSE-Course] on [Date]?
+Where is the tutoring center of the CSSE department?|Where is the CSSE department tutoring center?
+Who is the head tutor of the CSSE tutoring center?|Who is the CSSE tutoring center head tutor?
+What is the email of the head tutor of the CSSE tutoring center?|How do I contact the head tutor of the CSSE tutoring center?
+How many tutors does the CSSE tutoring center have?|How many CSSE tutors are there?
+Is [Person] a tutor at the CSSE tutoring center?|Is [Person] a CSSE tutor?
+Who is the advisor of the CSSE tutoring center?|Who is the CSSE tutoring center advisor?
+What is the email of the advisor of the CSSE tutoring center?|How can I contact the advisor for the CSSE tutoring center?
+Is there a schedule for the CSSE tutoring center?|What's the schedule of the CSSE tutoring center?
+Is there any requirement for being a tutor at CSSE tutoring center?|
+Who should I contact if I want to be a tutor at the CSSE tutoring center?|Who should I talk to to be a CSSE tutor?|Who should I speak to about being a CSSE tutor?
+Does the CSSE tutoring center require sign-up?|Do you need to sign-up for CSSE tutoring?
+What are the tutoring options available for statistics?|What kind of tutoring does the STAT department offer?|What kind of statistics tutoring is available?
+What STAT courses have private tutoring available?|What Statistics courses have tutoring available?
+Does the STAT department offer private tutoring for [Stat-Course]?|Does [Stat-Course] have private tutoring available?
+Who are the private tutors available for the STAT department?|Who is available to tutor Statistics?
+Is [Person] available as a private tutor for Statistics?|Is [Person] a Statistics private tutor?|Is [Person] a private tutor for Statistics?
+Are there any private tutors for [Stat-Course]?|Does [Stat-Course] have a private tutor?
+What is the contact information of private Statistics tutors that teach [Stat-Course]?|How do I contact private Statistics tutors?
+How many private Statistics tutors are available?|How many private Statistics tutors are there?
+Where is the free Statistics tutoring located?|Where is Statistics tutoring?
+When is the free Statistics tutoring?|When is Statistics tutoring?
+Where is R programming assistance located?|Where can I get help with R programming?
+When is R programming assistance offered?|When can I get help with R programming?
+Where can I get more information about Statistics tutoring?|Where can I learn more about Statistics tutoring?|Where can I learn more about STATS tutoring?
+Who are the data services peer assistants?|Who are data service peer assistants?|Who are the people that can help me with data?
+Where can I find assistance for working with data?|Where can I get help with data?|Where can I get help with working with data?
+When can I find assistance for working with data?|When can I get help with data?|When can I get assistance for working with data?
+What subjects do the data services peer assistants help with?|What do the data services peer assistants help with?|What can the data services peer assistants help with?
+How do you sign up to be a [Department] tutor?|How do I become a [Department] tutor?
