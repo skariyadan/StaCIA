@@ -49,7 +49,7 @@ def normal_answer(query):
             cursor.execute(sql)
             result = ''
 
-            if cnt == 1 && 'How many' not in questions[question_num][0]: 
+            if cnt == 1 and 'How many' not in questions[question_num][0]: 
                 response.split('[')
                 for row in cursor:
                     result += str(row[(cursor.description)[0][0]]) + ', '
