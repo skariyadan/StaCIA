@@ -89,7 +89,7 @@ def getanswer(query, question):
     response_string = ''
 
     if query['signal'] == 'Normal':
-        response_string = normal_answer(query) 
+        response_string = normal_answer(query, question)
 
     elif query['signal'] == 'Unknown':
         response_string = "Sorry, I don't know the answer to this!"
