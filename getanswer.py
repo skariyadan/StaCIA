@@ -52,8 +52,8 @@ def normal_answer(query):
             if cnt == 1 && 'How many' not in questions[question_num][0]: 
                 response.split('[')
                 for row in cursor:
-                  result += str(row[(cursor.description)[0][0]]) + ', '
-                  result = result[:-2]
+                    result += str(row[(cursor.description)[0][0]]) + ', '
+                result = result[:-2]
                 response = response[0] + result + response.split(']')[1] 
 
             elif cnt == 2:
