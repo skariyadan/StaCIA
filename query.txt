@@ -14,28 +14,28 @@ A1|What are the social media accounts for the [Club] club?|[Club] club’s Faceb
 A1|Are there any upcoming events for the [Stat-Club] club in the STAT department?|(No. / Yes. The next event is [Stat-Event] on [Date].)
 A1|How many people follow the [Stat-Club] club’s Facebook page?|[Followers] follow the [Stat-Club] club’s Facebook page.
 A1|Are there any new posts on the [Stat-Club] club’s Facebook page?|There are [Posts] new posts today and [Posts] posts in the past 30 days on the [Stat-Club] club’s Facebook page.
-A1|What is the next event for [Stat-Club]?|The next event is [Stat-Event] on [Date].
-A1|When is the next event for [Stat-Club]?|The next event is [Stat-Event] on [Date].
+A1|What is the next event for [Stat-Club] club?|The next event is [Stat-Event] on [Date].
+A1|When is the next event for [Stat-Club] club?|The next event is [Stat-Event] on [Date].
 A1|Is there an event for [Stat-Club] club on [Date]?|(No. / Yes. There is [Stat-Event].)
 A1|Are there any upcoming events for the [CSSE-Club] club in the CSSE department?|(No. / Yes. The next event is [CSSE-Event] on [Date].)
 A1|How many people follow the [CSSE-Club] club’s Facebook page?|[Followers] follow the [CSSE-Club] club’s Facebook page.
-A1|What is the next event for [CSSE-Club]?|The next event is [CSSE-Event] on [Date].
-A1|When is the next event for [CSSE-Club]?|The next event is [CSSE-Event] on [Date].
-A1|Is there an event for [CSSE-Club] on [Date]?|(No. / Yes. There is [CSSE-Event].)
+A1|What is the next event for [CSSE-Club] club?|The next event is [CSSE-Event] on [Date].
+A1|When is the next event for [CSSE-Club] club?|The next event is [CSSE-Event] on [Date].
+A1|Is there an event for [CSSE-Club] club on [Date]?|(No. / Yes. There is [CSSE-Event].)
 A1|Who are the officers for [Stat-Club] club?|The officers for [Stat-Club] are: [Person] ([Position]),….
 A1|Who are the officers for [CSSE-Club] club?|The officers for [CSSE-Club] are: [Person] ([Position]),….
 A1|When are the meetings for [Stat-Club] club?|The meetings are [Day] at [Time] in room [Room].
 A1|When are the meetings for [CSSE-Club] club?|The meetings are [Day] at [Time] in room [Room].
 A1|When is the next meeting for [Stat-Club] club?|The next meeting is at [Date] at [Time] in room [Room].
 A1|When is the next meeting for [CSSE-Club] club?|The next meeting is at [Date] at [Time] in room [Room].
-A1|Does [Stat-Club] have any projects?|(No. / Yes. The project(s) is (are) [Project],….)
-A1|Does [CSSE-Club] have any projects?|(No. / Yes. The project(s) is (are) [Project]….)
-A1| Where is [Stat-Club] located?|[Stat-Club] is located in [Room].
-A1|Where is [CSSE-Club] located?|[CSSE-Club] is located in [Room].
-A1|Does [Stat-Club] have their own room?|(No. / Yes.)
-A1|Does [CSSE-Club] have their own room?|(No. / Yes.)
-A1|Does [Stat-Club] have any sponsors?|(No. / Yes. They are [Sponsor],….)
-A1|Does [CSSE-Club] have any sponsors?|(No. / Yes. They are [Sponsor],….)
+A1|Does [Stat-Club] club have any projects?|(No. / Yes. The project(s) is (are) [Project],….)
+A1|Does [CSSE-Club] club have any projects?|(No. / Yes. The project(s) is (are) [Project]….)
+A1| Where is [Stat-Club] club located?|[Stat-Club] is located in [Room].
+A1|Where is [CSSE-Club] club located?|[CSSE-Club] is located in [Room].
+A1|Does [Stat-Club] club have their own room?|(No. / Yes.)
+A1|Does [CSSE-Club] club have their own room?|(No. / Yes.)
+A1|Does [Stat-Club] club have any sponsors?|(No. / Yes. They are [Sponsor],….)
+A1|Does [CSSE-Club] club have any sponsors?|(No. / Yes. They are [Sponsor],….)
 A1|What are the technical tracks option for SLO Hacks club?|They are [Tracks].
 A1|What college is affiliated with the [Club] club?|The College of [College].
 A1|What are some past events of the [Stat-Club] club?|Some past events are [Stat-Event] on [Date],….
@@ -48,7 +48,7 @@ A1|Who is the president of the [Club] club?|[Person] is the president.
 A1|Who is the vice president of the [Club] club?|[Person] is the vice president.
 A1|Who is the secretary of the [Club] club?|[Person] is the secretary.
 A1|Who is the treasurer of the [Club] club?|[Person] is the treasurer.
-A1|How can I contact [Club]?|Contact [Club] via [Email].
+A1|How can I contact [Club] club?|Contact [Club] via [Email].
 A1|Are there any [Type] clubs in the [Department] department?|(No. / Yes: [Club], ….)
 A1|Is [Person] a President of any clubs?|(No. / Yes: [Club].)
 A1|What is the phone number of the President of the [Club] club?|[Person]’s phone number is [Phone Number].
@@ -60,23 +60,23 @@ A1|How many people joined the [CSSE-Club] club’s Facebook page in the past 30 
 A1|What resources are used by the [Club] club?|[Club] uses [Resources].
 A1|Is there an Instagram account for the [CSSE-Club] club?| (No. / Yes. The Instagram account for the [CSSE-Club] club is [Instagram].)
 A1|How many followers does the [CSSE-Club] club’s Instagram account have? |The [CSSE-Club] Instagram account has [Followers] followers.
-A1|How many accounts does the [CSSE-Club]’s Instagram follow?|The [CSSE-Club]’s Instagram follows [Number] accounts.
+A1|How many accounts does the [CSSE-Club] club’s Instagram follow?|The [CSSE-Club]’s Instagram follows [Number] accounts.
 A1|Is there an Instagram account for the [Stat-Club] club?|(No. /Yes. The Instagram account for the [Stat-Club] club is [Instagram].)
 A1|How many followers does the [Stat-Club] club’s Instagram account have?|The [Stat-Club] Instagram account has [Followers] followers.
-A1|Does [Club] and [Club] have any events together?|(No. / Yes. They have [Event] on [Date].)
-A1|Does the [CSSE-Club] have an office?|(No./Yes.)
-A1|Where is the office of the [CSSE-Club]?|The [CSSE-Club] has no office./It is in [Room].
-A1|How many officers does the [CSSE-Club] have?|The [CSSE-Club] has [Number] officers.
-A1|Where will the next event of the [CSSE-Club] be held?|The next event of the [CSSE-Club] will be held in [Room] or [Place].
-A1|When will the next event of the [CSSE-Club] be held?|The next event of the [CSSE-Club] will be held at [Time] on [Date].
+A1|Does [Club] club and [Club] club have any events together?|(No. / Yes. They have [Event] on [Date].)
+A1|Does the [CSSE-Club] club have an office?|(No./Yes.)
+A1|Where is the office of the [CSSE-Club] club?|The [CSSE-Club] has no office./It is in [Room].
+A1|How many officers does the [CSSE-Club] club have?|The [CSSE-Club] has [Number] officers.
+A1|Where will the next event of the [CSSE-Club] club be held?|The next event of the [CSSE-Club] will be held in [Room] or [Place].
+A1|When will the next event of the [CSSE-Club] club be held?|The next event of the [CSSE-Club] will be held at [Time] on [Date].
 A1|Can men join the WISH club?|Yes.
-A1|Is there any club fee for joining the [CSSE-Club]?|(No. /Yes.)
-A1|Is there any club fee for joining the [Stat-Club]?|(No. /Yes.)
-A1|What is the next event of the [CSSE-Club]?|It is the [Event].
+A1|Is there any club fee for joining the [CSSE-Club] club?|(No. /Yes.)
+A1|Is there any club fee for joining the [Stat-Club] club?|(No. /Yes.)
+A1|What is the next event of the [CSSE-Club] club?|It is the [Event].
 A1|When does the CSSE tutoring start?|It starts at [Time].
 A1|When does the CSSE tutoring end?|It ends at [Time].
-A1|How many events does the [CSSE-Club] have next week?|The [CSSE-Club] has [number] events next week.
-A1|Is there an email subscription for the [CSSE-Club]?| (No. /Yes.)
+A1|How many events does the [CSSE-Club] club have next week?|The [CSSE-Club] has [number] events next week.
+A1|Is there an email subscription for the [CSSE-Club] club?| (No. /Yes.)
 A1|What courses does the CSSE department offer tutoring for?|[CSSE-Course], ….
 A1|Does the CSSE department offer tutoring for [CSSE-Course]?| (No. /Yes.)
 A1|Is there tutoring for [CSSE-Course] on [Date]?| (No. / Yes.)
@@ -114,12 +114,12 @@ A1|What are the [Department] clubs?|The following clubs are in the [Department] 
 A1|What are the clubs offered by [Department]?|The following clubs are in the [Department] department: [Club], ….
 A1|What number clubs are in [Department]?|There are [Number] clubs.
 A1|What [Department] department clubs does [Faculty] advise?|[Faculty] is the advisor of the [Club] club.
-A1|Who is the advises [Club]?|[Faculty] is the advisor of the [Club] club.
+A1|Who is the advisor of [Club] club?|[Faculty] is the advisor of the [Club] club.
 A1|Who's the advisor of [Club] club?|[Faculty] is the advisor of the [Club] club.
 A1|What's the email of the [Club] club president?|[Person]’s email is [Email].
 A1|What type of club is [Club] club?|It is a [Type] club.
 A1|What kinds of club does the [Department] department offer?|[Club(s)] are (is a) [Type] club(s),….
-A1|What's the email for the advisor of [Club]?|[Faculty]’s email is [Email].
+A1|What's the email for the advisor of [Club] club?|[Faculty]’s email is [Email].
 A1|What's the [Club] club's advisor's email?|[Faculty]’s email is [Email].
 A1|What's the [Club] club?|[Club-Description]
 A1|What is the [Club] club homepage?|The homepage is [Club-Website].
@@ -130,25 +130,25 @@ A1|What is the social media for [Club] club?|[Club] club’s Facebook page is [F
 A1|What is the [Club] club's Instagram?|[Club] club’s Facebook page is [Facebook]. [Club] club’s Instagram account is [Instagram].
 A1|What is the [Club] club's Facebook?|[Club] club’s Facebook page is [Facebook]. [Club] club’s Instagram account is [Instagram].
 A1|Where can I follow [Club] club?|[Club] club’s Facebook page is [Facebook]. [Club] club’s Instagram account is [Instagram].
-A1|What are the upcoming events for [Stat-Club]?|(No. / Yes. The next event is [Stat-Event] on [Date].)
+A1|What are the upcoming events for [Stat-Club] club?|(No. / Yes. The next event is [Stat-Event] on [Date].)
 A1|Are there any upcoming events for the [Stat-Club] club?|(No. / Yes. The next event is [Stat-Event] on [Date].)
 A1|When is the next event for the [Stat-Club] club?|(No. / Yes. The next event is [Stat-Event] on [Date].)
 A1|How many followers does the [Stat-Club] club's Facebook page have?|[Followers] follow the [Stat-Club] club’s Facebook page.
 A1|What are the latest posts on the [Stat-Club] club's Facebook page?|There are [Posts] new posts today and [Posts] posts in the past 30 days on the [Stat-Club] club’s Facebook page.
-A1|What's the next event for [Stat-Club]?|The next event is [Stat-Event] on [Date].
-A1|What's the upcoming event for [Stat-Club]?|The next event is [Stat-Event] on [Date].
-A1|What is the upcoming event for [Stat-Club]?|The next event is [Stat-Event] on [Date].
-A1|When's the next event for [Stat-Club]?|The next event is [Stat-Event] on [Date].
-A1|When is the upcoming event for [Stat-Club]?|The next event is [Stat-Event] on [Date].
-A1|When's the upcoming event for [Stat-Club]?|The next event is [Stat-Event] on [Date].
+A1|What's the next event for [Stat-Club] club?|The next event is [Stat-Event] on [Date].
+A1|What's the upcoming event for [Stat-Club] club?|The next event is [Stat-Event] on [Date].
+A1|What is the upcoming event for [Stat-Club] club?|The next event is [Stat-Event] on [Date].
+A1|When's the next event for [Stat-Club] club?|The next event is [Stat-Event] on [Date].
+A1|When is the upcoming event for [Stat-Club] club?|The next event is [Stat-Event] on [Date].
+A1|When's the upcoming event for [Stat-Club] club?|The next event is [Stat-Event] on [Date].
 A1|Is there an event for [Stat-Club] club on [Date]?|(No. / Yes. There is [Stat-Event].)
-A1|On [Date], is there an event for [Stat-Club]?|(No. / Yes. There is [Stat-Event].)
-A1|What event for [Stat-Club] is on [Date]?|(No. / Yes. There is [Stat-Event].)
+A1|On [Date], is there an event for [Stat-Club] club?|(No. / Yes. There is [Stat-Event].)
+A1|What event for [Stat-Club] club is on [Date]?|(No. / Yes. There is [Stat-Event].)
 A1|Are there any upcoming events for the [CSSE-Club] club in the CSSE department?|(No. / Yes. The next event is [CSSE-Event] on [Date].)
-A1|What are the upcoming events for [CSSE-Club]?|(No. / Yes. The next event is [CSSE-Event] on [Date].)
-A1|Are there any upcoming events for [CSSE-Club]?|(No. / Yes. The next event is [CSSE-Event] on [Date].)
+A1|What are the upcoming events for [CSSE-Club] club?|(No. / Yes. The next event is [CSSE-Event] on [Date].)
+A1|Are there any upcoming events for [CSSE-Club] club?|(No. / Yes. The next event is [CSSE-Event] on [Date].)
 A1|How many followers does the [CSSE-Club] club's Facebook page have?|[Followers] follow the [CSSE-Club] club’s Facebook page.
-A1|What is the next event for [CSSE-Club]?|The next event is [CSSE-Event] on [Date].
+A1|What is the next event for [CSSE-Club] club?|The next event is [CSSE-Event] on [Date].
 A1|What's the next event for [CSSE-Club]?|The next event is [CSSE-Event] on [Date].
 A1|What's the upcoming event for [CSSE-Club]?|The next event is [CSSE-Event] on [Date].
 A1|What is the upcoming event for [CSSE-Club]?|The next event is [CSSE-Event] on [Date].
@@ -168,14 +168,14 @@ A1|When's the upcoming meeting for [CSSE-Club] club?|The next meeting is at [Dat
 A1|When's the next meeting for [CSSE-Club] club?|The next meeting is at [Date] at [Time] in room [Room].
 A1|When does [Stat-Club] club meet?|The meetings are [Day] at [Time] in room [Room].
 A1|When does [CSSE-Club] club meet?|The meetings are [Day] at [Time] in room [Room].
-A1|Are there any [Stat-Club] projects?|(No. / Yes. The project(s) is (are) [Project],….)
-A1|What are the [Stat-Club] projects?|(No. / Yes. The project(s) is (are) [Project],….)
-A1|Are there any [CSSE-Club] projects?|(No. / Yes. The project(s) is (are) [Project]….)
-A1|What are the [CSSE-Club] projects?|(No. / Yes. The project(s) is (are) [Project]….)
-A1| Where is [Stat-Club]?|[Stat-Club] is located in [Room].
-A1|Where is [CSSE-Club]?|[CSSE-Club] is located in [Room].
-A1|Who are the [Stat-Club] sponsors?|(No. / Yes. They are [Sponsor],….)
-A1|Who are the [CSSE-Club] sponsors?|(No. / Yes. They are [Sponsor],….)
+A1|Are there any [Stat-Club] club projects?|(No. / Yes. The project(s) is (are) [Project],….)
+A1|What are the [Stat-Club] club projects?|(No. / Yes. The project(s) is (are) [Project],….)
+A1|Are there any [CSSE-Club] club projects?|(No. / Yes. The project(s) is (are) [Project]….)
+A1|What are the [CSSE-Club] club projects?|(No. / Yes. The project(s) is (are) [Project]….)
+A1| Where is [Stat-Club] club?|[Stat-Club] is located in [Room].
+A1|Where is [CSSE-Club] club?|[CSSE-Club] is located in [Room].
+A1|Who are the [Stat-Club] club sponsors?|(No. / Yes. They are [Sponsor],….)
+A1|Who are the [CSSE-Club] club sponsors?|(No. / Yes. They are [Sponsor],….)
 A1|What are the technical tracks for SLO Hacks club?|They are [Tracks].
 A1|What technical tracks are available for SLO Hacks club?|They are [Tracks].
 A1|What department is affiliated with the [Club] club?|The College of [College].
@@ -200,30 +200,30 @@ A1|How many people recently joined the [Stat-Club] club's Facebook page?|[Number
 A1|How many people posted recently on the [CSSE-Club] club's Facebook page?|[Number] people posted on the page.
 A1|How many people posted recently on the [CSSE-Club] club's Facebook page?|[Number] people posted on the page.
 A1|What resources does [Club] club use?|[Club] uses [Resources].
-A1|What is the [CSSE-Club] Instagram?| (No. / Yes. The Instagram account for the [CSSE-Club] club is [Instagram].)
-A1|Where do I follow [CSSE-Club] on Instagram?| (No. / Yes. The Instagram account for the [CSSE-Club] club is [Instagram].)
+A1|What is the [CSSE-Club] club Instagram?| (No. / Yes. The Instagram account for the [CSSE-Club] club is [Instagram].)
+A1|Where do I follow [CSSE-Club] club on Instagram?| (No. / Yes. The Instagram account for the [CSSE-Club] club is [Instagram].)
 A1|How many people does the [CSSE-Club] club's Instagram follow?|The [CSSE-Club] Instagram account has [Followers] followers.
-A1|How many accounts does the [CSSE-Club]’s Instagram follow?|The [CSSE-Club]’s Instagram follows [Number] accounts.
-A1|What's the [Stat-Club] Instagram?|(No. /Yes. The Instagram account for the [Stat-Club] club is [Instagram].)
-A1|Where do I follow [Stat-Club] on Instagram?|(No. /Yes. The Instagram account for the [Stat-Club] club is [Instagram].)
+A1|How many accounts does the [CSSE-Club] club’s Instagram follow?|The [CSSE-Club]’s Instagram follows [Number] accounts.
+A1|What's the [Stat-Club] club Instagram?|(No. /Yes. The Instagram account for the [Stat-Club] club is [Instagram].)
+A1|Where do I follow [Stat-Club] club on Instagram?|(No. /Yes. The Instagram account for the [Stat-Club] club is [Instagram].)
 A1|What number followers does the [Stat-Club] club have on Instagram?|The [Stat-Club] Instagram account has [Followers] followers.
-A1|Did [Club] and [Club] do any events together?|(No. / Yes. They have [Event] on [Date].)
-A1|Where is the [CSSE-Club] office?|The [CSSE-Club] has no office./It is in [Room].
-A1|What number officer positions does [CSSE-Club] have?|The [CSSE-Club] has [Number] officers.
-A1|Where is the next [CSSE-Club] event?|The next event of the [CSSE-Club] will be held in [Room] or [Place].
-A1|Where is the upcoming [CSSE-Club] event?|The next event of the [CSSE-Club] will be held in [Room] or [Place].
-A1|When is the next [CSSE-Club] event?|The next event of the [CSSE-Club] will be held at [Time] on [Date].
-A1|When is the upcoming [CSSE-Club] event?|The next event of the [CSSE-Club] will be held at [Time] on [Date].
+A1|Did [Club] club and [Club] club do any events together?|(No. / Yes. They have [Event] on [Date].)
+A1|Where is the [CSSE-Club] club office?|The [CSSE-Club] has no office./It is in [Room].
+A1|What number officer positions does [CSSE-Club] club have?|The [CSSE-Club] has [Number] officers.
+A1|Where is the next [CSSE-Club] club event?|The next event of the [CSSE-Club] will be held in [Room] or [Place].
+A1|Where is the upcoming [CSSE-Club] club event?|The next event of the [CSSE-Club] will be held in [Room] or [Place].
+A1|When is the next [CSSE-Club] club event?|The next event of the [CSSE-Club] will be held at [Time] on [Date].
+A1|When is the upcoming [CSSE-Club] club event?|The next event of the [CSSE-Club] will be held at [Time] on [Date].
 A1|Can men join the WISH club?|Yes.
-A1|Are there club dues to join [CSSE-Club]?|(No. /Yes.)
-A1|Are there club dues to join [Stat-Club]?|(No. /Yes.)
-A1|What is the upcoming event for [CSSE-Club]?|It is the [Event].
-A1|What is the next [CSSE-Club] event?|It is the [Event].
-A1|What is the upcoming [CSSE-Club] event?|It is the [Event].
+A1|Are there club dues to join [CSSE-Club] club?|(No. /Yes.)
+A1|Are there club dues to join [Stat-Club] club?|(No. /Yes.)
+A1|What is the upcoming event for [CSSE-Club] club?|It is the [Event].
+A1|What is the next [CSSE-Club] club event?|It is the [Event].
+A1|What is the upcoming [CSSE-Club] club event?|It is the [Event].
 A1|When does CSSE tutoring begin?|It starts at [Time].
 A1|When does CSSE tutoring finish?|It ends at [Time].
-A1|How many [CSSE-Club] events are next week?|The [CSSE-Club] has [number] events next week.
-A1|Can I get emails from [CSSE-Club]?| (No. /Yes.)
+A1|How many [CSSE-Club] club events are next week?|The [CSSE-Club] has [number] events next week.
+A1|Can I get emails from [CSSE-Club] club?| (No. /Yes.)
 A1|What Computer Science courses has tutoring offered?|[CSSE-Course], ….
 A1|Does [CSSE-Course] have tutoring available?| (No. /Yes.)
 A1|Is there tutoring available for [CSSE-Course]?| (No. /Yes.)
