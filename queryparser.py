@@ -196,6 +196,8 @@ def getFeatures(question):
                 "require":"require" in question,
                 "option":"option" in question,
                 "can" :"can" in question,
-                "do" : "do" in question
+                "do" : "do" in question,
+                "the": "the" in question,
+                "a": "a" in question
     }
     return features
