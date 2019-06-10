@@ -1,4 +1,4 @@
 SELECT name FROM club WHERE department LIKE "%Department%"
 SELECT count(name) FROM club WHERE department LIKE "%Department%"
-SELECT c.name FROM club c JOIN clubXpeople cp on c.name = cp.club WHERE cp.position  LIKE "%Advisor%" AND cp.person LIKE "%[Advisor]%" AND c.department LIKE “%[Department]%"
+SELECT c.name FROM club c JOIN clubXpeople cp on c.name = cp.club WHERE cp.position  LIKE "%Advisor%" AND cp.person LIKE "%Faculty%" AND c.department LIKE “%Department%"
 SELECT person from clubXpeople WHERE position LIKE "%Advisor%" and club LIKE "%Club%"
