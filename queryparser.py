@@ -36,9 +36,6 @@ def parseQuery(input, questions, classifier):
     label = classifier.classify(getFeatures(input.lower()))
     probs = classifier.prob_classify(getFeatures(input.lower()))
     probLabel = probs.prob(label)
-    print(label)
-    print(probLabel)
-    print(questions[label])
     if probLabel < .1:
         return {"signal":"Unknown"}
     else:

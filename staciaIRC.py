@@ -14,6 +14,8 @@ class StaciaBot(irc.bot.SingleServerIRCBot):
         self.channel = channel
         self.question = question
         self.classifier = classifier
+        self.connection.privmsg(self.channel, "Welcome to the StaCIA Bot to help with your questions on tutoring and clubs for both CSSE and STAT in Cal Poly!")
+        self.connection.privmgs(self.channel, "Enter your question and I'll be happy to provide you an answer! Just tell me bye when you're done!")
 
     def on_nicknameinuse(self, c, e):
         c.nick(c.get_nickname() + "_")
@@ -51,6 +53,7 @@ class StaciaBot(irc.bot.SingleServerIRCBot):
         nick = e.source.nick
         c = self.connection
         if cmd == "bye":
+            c.privmsg("Goodbye! See you again soon!")
             self.disconnect()
         elif cmd == "bye":
             self.die()
@@ -68,7 +71,7 @@ class StaciaBot(irc.bot.SingleServerIRCBot):
         else:
             parsedQuery = queryparser.parseQuery(cmd, self.question, self.classifier)
             # response = getanswer.getanswer(parsedQuery)
-            # print(response)
+            # c.privmsg(self.channel, response)
 def main():
     if len(sys.argv) != 4:
         print("Usage: StaciaBot <server[:port]> <channel> <nickname>")
