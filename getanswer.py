@@ -24,6 +24,17 @@ def listofquery():
 
     return querylist
 
+# helper function 
+def replace_first_bracelet(response, word):
+   splited = response.split('[', 1)
+   response = splited[0] + word + splited[1].split(']', 1)[1]
+   return response
+
+def replace_response_with_list(response, word_list):
+   for word in word_list:
+      response = replace_first_bracelet(response, word)
+   return response
+
 # give a native response to a question that we know the answer
 def normal_answer(query):
 
@@ -49,25 +60,30 @@ def normal_answer(query):
     try:
         with connection.cursor() as cursor:
             cursor.execute(sql)
-            result = ''
 
             if cnt == 1 and 'How many' not in questions[question_num][0]: 
-                response.split('[')
+                result = ''
+                response = response.split('[')
                 for row in cursor:
                     result += str(row[(cursor.description)[0][0]]) + ', '
                 result = result[:-2]
-                response = response[0] + result + response.split(']')[1] 
+                response = res[0] + result + response.split(']')[1] 
             
             elif cnt == 1 && 'How many' in questions[question_num][0]:
-                reponse.split('[')
                 countrow = 0
                 for row in cursor:
                     countrow +=1
-                reponse = response[0] + str(countrow) + response.split(']')[1]
-
+                response = replace_response_with_list(response, str(countrow))
 
             elif cnt == 2:
-                pass # working on this
+                result = []
+
+                for row in cursor:
+                    result.append(str(row[(cursor.description)[0][0]]))
+
+                response = replace_response_with_list(response, result)
+          
+                
 
     except BaseException as e:
        return "Sorry, I don't know the answer to this!"
