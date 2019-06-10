@@ -1,3 +1,5 @@
+import pymysql.cursors, time,re, requests, random, os, sys
+
 f = open("credentials.txt","r")
     if f.mode == 'r':
        database = f.readline()
@@ -75,6 +77,6 @@ def getanswer(query):
         response_string = "Sorry, I don't know the answer to this!"
 
     elif query['signal'] == 'End':
-        response_string = 'Glad to help you today! Goodbye!\n'
+        response_string = 'Glad to help you today! Goodbye!'
 
     return response_string

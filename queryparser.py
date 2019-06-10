@@ -61,7 +61,7 @@ def parseQuery(input, questions, classifier):
                     var = " ".join(inputSplit[iis:])[:-1]
                 else:
                     stop = detQuestion[idq].lower()
-                    while stop not in inputSplit[iis].lower() and iis < len(inputSplit):
+                    while iis < len(inputSplit) and stop not in inputSplit[iis].lower():
                         var += inputSplit[iis] + " "
                         iis += 1
                 variable[varname] = var.strip()

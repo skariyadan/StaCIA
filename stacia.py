@@ -1,5 +1,6 @@
 import sys
 import queryparser
+#import getanswer
 
 query = ""
 name = ""
@@ -20,7 +21,7 @@ while endsignal == 0:
         break
     parsedQuery = queryparser.parseQuery(query, question, classifier)
     print(parsedQuery) # just for now
-    # response = getanswer(parsedQuery)
+    # response = getanswer.getanswer(parsedQuery)
     # print(response)
 print("\nGoodbye " + name + "! See you again soon!")
 

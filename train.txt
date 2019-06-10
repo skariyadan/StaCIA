@@ -1,4 +1,4 @@
-What clubs does the [Department] department offer?| What are the clubs offered by [Department]?| What are the [Department] clubs?|What clubs are offered by [Department]?
+What clubs does the [Department] department offer?| What are the clubs offered by [Department]?| What are the [Department] clubs?
 How many clubs are in the [Department] department?| What number clubs are in [Department]?
 Does [Faculty] advise any clubs in the [Department] department?| What [Department] department clubs does [Faculty] advise?
 Who is the advisor of the [Club] club?| Who advises [Club]?| Who's the advisor of [Club] club?
@@ -89,7 +89,7 @@ Is [Person] a tutor at the CSSE tutoring center?|Is [Person] a CSSE tutor?
 Who is the advisor of the CSSE tutoring center?|Who is the CSSE tutoring center advisor?
 What is the email of the advisor of the CSSE tutoring center?|How can I contact the advisor for the CSSE tutoring center?
 Is there a schedule for the CSSE tutoring center?|What's the schedule of the CSSE tutoring center?
-Is there any requirement for being a tutor at CSSE tutoring center?|
+Is there any requirement for being a tutor at CSSE tutoring center?|What's the requirement to be a tutor at the CSSE tutoring center?
 Who should I contact if I want to be a tutor at the CSSE tutoring center?|Who should I talk to to be a CSSE tutor?|Who should I speak to about being a CSSE tutor?
 Does the CSSE tutoring center require sign-up?|Do you need to sign-up for CSSE tutoring?
 What are the tutoring options available for statistics?|What kind of tutoring does the STAT department offer?|What kind of statistics tutoring is available?
@@ -98,7 +98,7 @@ Does the STAT department offer private tutoring for [Stat-Course]?|Does [Stat-Co
 Who are the private tutors available for the STAT department?|Who is available to tutor Statistics?
 Is [Person] available as a private tutor for Statistics?|Is [Person] a Statistics private tutor?|Is [Person] a private tutor for Statistics?
 Are there any private tutors for [Stat-Course]?|Does [Stat-Course] have a private tutor?
-What is the contact information of private Statistics tutors that teach [Stat-Course]?|How do I contact private Statistics tutors?
+What is the contact information of private Statistics tutors that teach [Stat-Course]?|How do I contact the private Statistics tutors that teach [Stat-Course]?
 How many private Statistics tutors are available?|How many private Statistics tutors are there?
 Where is the free Statistics tutoring located?|Where is Statistics tutoring?
 When is the free Statistics tutoring?|When is Statistics tutoring?
