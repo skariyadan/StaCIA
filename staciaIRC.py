@@ -51,7 +51,7 @@ class StaciaBot(irc.bot.SingleServerIRCBot):
         nick = e.source.nick
         c = self.connection
         if cmd == "bye":
-            c.privmsg("Goodbye! See you again soon!")
+            c.privmsg(self.channel, "Goodbye! See you again soon!")
             self.disconnect()
         elif cmd == "bye":
             self.die()
