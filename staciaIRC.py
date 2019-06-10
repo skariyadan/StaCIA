@@ -1,6 +1,7 @@
 import os, sys, random, requests
 from bs4 import BeautifulSoup
 import irc.bot
+import json
 import irc.strings
 from irc.client import ip_numstr_to_quad, ip_quad_to_numstr
 import sys
@@ -68,6 +69,7 @@ class StaciaBot(irc.bot.SingleServerIRCBot):
             c.privmsg(self.channel, "Enter your question and I'll be happy to provide you an answer! Just tell me bye when you're done!")
         else:
             parsedQuery = queryparser.parseQuery(cmd, self.question, self.classifier)
+            c.privmsg(self.channel, json.dumps(parsedQuery))
             # response = getanswer.getanswer(parsedQuery)
             # c.privmsg(self.channel, response)
 def main():
