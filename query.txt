@@ -114,7 +114,6 @@ A1|What are the [Department] clubs?|The following clubs are in the [Department] 
 A1|What are the clubs offered by [Department]?|The following clubs are in the [Department] department: [Club], .
 A1|What number clubs are in [Department]?|There are [Number] clubs.
 A1|What [Department] department clubs does [Faculty] advise?|[Faculty] is the advisor of the [Club] club.
-A1|Who is the advisor of [Club] club?|[Faculty] is the advisor of the [Club] club.
 A1|What's the email of the [Club] club president?|[Person]’s email is [Email].
 A1|What type of club is [Club] club?|It is a [Type] club.
 A1|What kinds of club does the [Department] department offer?|[Club(s)] are (is a) [Type] club(s),.
