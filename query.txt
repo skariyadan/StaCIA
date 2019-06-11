@@ -1,4 +1,4 @@
-A1|What clubs does the [Department] department offer?|The following clubs are in the [Department] department: [Club], .
+A1|What clubs does the [Department] department offer?|The following clubs are in the [Department] department: [Club].
 A1|How many clubs are in the [Department] department?|There are [Number] clubs.
 A1|Does [Faculty] advise any clubs in the [Department] department?|[Faculty] is the advisor of the [Club] club.
 A1|Who is the advisor of the [Club] club?|[Faculty] is the advisor of the [Club] club.
