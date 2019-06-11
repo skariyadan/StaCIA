@@ -49,10 +49,8 @@ def normal_answer(query, questions):
     for item in listofkeys:
         if item in sql:
             sql = sql.replace(item, question_var[item]) #should be a whole sql command after replace
-            print(sql)
         if item in response:
             response = response.replace('['+item+']', question_var[item])
-            print(response)
 
     # count number of varibales in the response are coming from tables
     cnt = 0
