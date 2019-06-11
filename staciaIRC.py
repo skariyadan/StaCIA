@@ -70,7 +70,7 @@ class StaciaBot(irc.bot.SingleServerIRCBot):
         else:
             parsedQuery = queryparser.parseQuery(cmd, self.question, self.classifier)
             #c.privmsg(self.channel, json.dumps(parsedQuery))
-            response = getanswer.getanswer(parsedQuery)
+            response = getanswer.getanswer(parsedQuery, self.question)
             c.privmsg(self.channel, response)
 def main():
     if len(sys.argv) != 4:
