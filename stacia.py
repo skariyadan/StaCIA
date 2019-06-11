@@ -20,7 +20,6 @@ while endsignal == 0:
         endsignal = 1
         break
     parsedQuery = queryparser.parseQuery(query, question, classifier)
-    print(parsedQuery) # just for now
     response = getanswer.getanswer(parsedQuery, question)
     print(response)
 print("\nGoodbye " + name + "! See you again soon!")
