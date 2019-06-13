@@ -28,20 +28,20 @@ A1|When are the meetings for [Stat-Club] club?|The meetings are [Day] in room [R
 A1|When are the meetings for [CSSE-Club] club?|The meetings are [Day]in room [Room].
 A1|When is the next meeting for [Stat-Club] club?|The next meeting is at [Date] in room [Room].
 A1|When is the next meeting for [CSSE-Club] club?|The next meeting is at [Date] in room [Room].
-A1|Does [Stat-Club] club have any projects?|(No. / Yes. The project(s) is (are) [Project].)
-A1|Does [CSSE-Club] club have any projects?|(No. / Yes. The project(s) is (are) [Project].)
+A1|Does [Stat-Club] club have any projects?|Yes. The project(s) is (are) [Project].
+A1|Does [CSSE-Club] club have any projects?|Yes. The project(s) is (are) [Project].
 A1|Where is [Stat-Club] club located?|[Stat-Club] is located in [Room].
 A1|Where is [CSSE-Club] club located?|[CSSE-Club] is located in [Room].
-A1|Does [Stat-Club] club have their own room?|(No. / Yes.)
-A1|Does [CSSE-Club] club have their own room?|(No. / Yes.)
-A1|Does [Stat-Club] club have any sponsors?|(No. / Yes. They are [Sponsor],.)
-A1|Does [CSSE-Club] club have any sponsors?|(No. / Yes. They are [Sponsor],.)
+A1|Does [Stat-Club] club have their own room?|Yes.
+A1|Does [CSSE-Club] club have their own room?|Yes.
+A1|Does [Stat-Club] club have any sponsors?|Yes. They are [Sponsor].
+A1|Does [CSSE-Club] club have any sponsors?|Yes. They are [Sponsor].
 A1|What are the technical tracks option for SLO Hacks club?|They are [Tracks].
 A1|What college is affiliated with the [Club] club?|The College of [College].
-A1|What are some past events of the [Stat-Club] club?|Some past events are [Stat-Event] on [Date],.
-A1|What are some past events of the [CSSE-Club] club?|Some past events are [CSSE-Event] on [Date],
-A1|What was the last event of the [Stat-Club] club?|The last event was [Stat-Event] on [Date].
-A1|What was the last event of the [CSSE-Club] club?|The last event was [CSSE-Event] on [Date].
+A1|What are some past events of the [Stat-Club] club?|Some past events are [Stat-Event].
+A1|What are some past events of the [CSSE-Club] club?|Some past events are [CSSE-Event].
+A1|What was the last event of the [Stat-Club] club?|The last event was [Stat-Event].
+A1|What was the last event of the [CSSE-Club] club?|The last event was [CSSE-Event].
 A1|When was the last event of [Stat-Club] club?|The last event was [Stat-Event] on [Date].
 A1|When was the last event of [CSSE-Club] club?|The last event was [Stat-Event] on [Date].
 A1|Who is the president of the [Club] club?|[Person] is the president.
@@ -49,8 +49,8 @@ A1|Who is the vice president of the [Club] club?|[Person] is the vice president.
 A1|Who is the secretary of the [Club] club?|[Person] is the secretary.
 A1|Who is the treasurer of the [Club] club?|[Person] is the treasurer.
 A1|How can I contact [Club] club?|Contact [Club] via [Email].
-A1|Are there any [Type] clubs in the [Department] department?|(No. / Yes: [Club], .)
-A1|Is [Person] a President of any clubs?|(No. / Yes: [Club].)
+A1|Are there any [Type] clubs in the [Department] department?|Yes: [Club].
+A1|Is [Person] a President of any clubs?|Yes: [Club].
 A1|What is the phone number of the President of the [Club] club?|[Person]’s phone number is [Phone Number].
 A1|What is the phone number of the Advisor of the [Club] club?|[Faculty]’s phone number is [Phone Number].
 A1|How many people posted on the [Stat-Club] club’s Facebook page in the past 30 days?|[Number] people posted on the page.
