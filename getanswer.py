@@ -67,18 +67,28 @@ def normal_answer(query, questions):
                 for row in cursor:
                     result += str(row[(cursor.description)[0][0]]) + ', '
                 result = result[:-2]
-                response = res[0] + result + response.split(']')[1] 
+                if result == '':
+                    response = 'No.'
+                else:
+                    response = res[0] + result + response.split(']')[1] 
 
             elif cnt == 2:
                 result = []
 
                 for row in cursor:
                     result.append(str(row[(cursor.description)[0][0]]))
-
-                response = replace_response_with_list(response, result)
-          
-                
-
+                    resule.append(str(rpw[(cursor.description)[1][0]]))
+                if result == []:
+                    response = 'No.'
+                elif len(result) == 1 and result[0] == '':
+                    result[0] = "NULL"
+                elif len(result) == 2 and result[0] == '':
+                    result[1] = "NULL"
+                elif len(result) == 2 and (result[0] == result[1] == ''):
+                    result[0] = result[1] = "NULL"
+                else:
+                    response = replace_response_with_list(response, result)
+  
     except BaseException as e:
        return "Sorry, I don't know the answer to this!"
 
