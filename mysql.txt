@@ -2,3 +2,49 @@ SELECT name FROM club WHERE department LIKE "%Department%"
 SELECT count(name) FROM club WHERE department LIKE "%Department%"
 SELECT c.name FROM club c JOIN clubXpeople cp on c.name = cp.club WHERE cp.position LIKE "%Advisor%" AND cp.person LIKE "%Faculty%" AND c.department LIKE "%Department%"
 SELECT person from clubXpeople WHERE position LIKE "%Advisor%" and club LIKE "%Club%"
+SELECT person,email from clubXpeople WHERE club LIKE "%Club%" AND position = "President"
+SELECT type FROM club WHERE name LIKE "%Club%"
+SELECT distinct(type) FROM club WHERE department LIKE "%Department%"
+SELECT person,email FROM clubXpeople WHERE club LIKE "%Club%" and position LIKE "%Advisor%"
+SELECT description FROM club WHERE name LIKE "%Club%"
+SELECT homepage FROM club WHERE name LIKE "%Club%"
+SELECT box FROM club WHERE name LIKE "%Club%"
+SELECT email FROM club WHERE name LIKE "%Club%"
+SELECT * FROM (SELECT event,date FROM clubXevent WHERE club LIKE "%Stat-Club%") AS sub LIMIT 1
+SELECT members FROM clubFBxActivity WHERE club LIKE "%Stat-Club%"
+SELECT postsToday,postsMonth FROM clubFBxActivity WHERE club LIKE "%Stat-Club%"
+SELECT * FROM (SELECT event,date FROM clubXevent WHERE club LIKE "%Stat-Club%") AS sub LIMIT 1
+SELECT * FROM (SELECT event,date FROM clubXevent WHERE club LIKE "%Stat-Club%") AS sub LIMIT 1
+SELECT event FROM clubXevent WHERE club LIKE "%Stat-Club%" and date LIKE "%Date%"
+SELECT * FROM (SELECT event,date FROM clubXevent WHERE club LIKE "%CSSE-Club%") AS sub LIMIT 1
+SELECT members FROM clubFBxActivity WHERE club LIKE "%CSSE-Club%"
+SELECT * FROM (SELECT event,date FROM clubXevent WHERE club LIKE "%CSSE-Club%") AS sub LIMIT 1
+SELECT * FROM (SELECT event,date FROM clubXevent WHERE club LIKE "%CSSE-Club%") AS sub LIMIT 1
+SELECT event FROM clubXevent WHERE club LIKE "%Club%" and date LIKE "%Date%"
+SELECT person FROM clubXpeople WHERE position NOT LIKE "%Advisor%" and club LIKE "%Stat-club%"
+SELECT person FROM clubXpeople WHERE position NOT LIKE "%Advisor%" and club LIKE "%CSSE-club%"
+SELECT date,location from clubXevent WHERE club LIKE "%Stat-Club%" AND event LIKE "%meeting%"
+SELECT date,location from clubXevent WHERE club LIKE "%CSSE-Club%" AND event LIKE "%meeting%"
+SELECT * FROM (SELECT date,location from clubXevent WHERE club LIKE "%Stat-Club%" AND event LIKE "%meeting%") AS sub LIMIT 1
+SELECT * FROM (SELECT date,location from clubXevent WHERE club LIKE "%CSSE-Club%" AND event LIKE "%meeting%") AS sub LIMIT 1
+SELECT project from clubXproject WHERE club LIKE "%Stat-Club%"
+SELECT project from clubXproject WHERE club LIKE "%CSSE-Club%"
+SELECT location FROM clubXevent WHERE event = "meeting" AND club LIKE "%Stat-Club%"
+SELECT location FROM clubXevent WHERE event = "meeting" AND club LIKE "%CSSE-Club%"
+SELECT location FROM clubXevent WHERE event = "meeting" AND club LIKE "%Stat-Club%"
+SELECT location FROM clubXevent WHERE event = "meeting" AND club LIKE "%CSSE-Club%"
+SELECT sponsor from clubXsponsor WHERE club LIKE "%Stat-Club%"
+SELECT sponsor from clubXsponsor WHERE club LIKE "%CSSE-Club%"
+SELECT project FROM clubXproject WHERE club LIKE "%SLO Hacks%"
+SELECT college FROM club WHERE name LIKE "%Club%"
+SELECT event FROM clubXevent WHERE club LIKE "%Stat-Club%"
+SELECT event FROM clubXevent WHERE club LIKE "%CSSE-Club%"
+SELECT  * FROM (SELECT event FROM clubXevent WHERE club LIKE "%Stat-Club%") AS sub LIMIT 1
+SELECT  * FROM (SELECT event FROM clubXevent WHERE club LIKE "%CSSE-Club%") AS sub LIMIT 1
+SELECT  * FROM (SELECT event,date FROM clubXevent WHERE club LIKE "%Stat-Club%") AS sub LIMIT 1
+SELECT  * FROM (SELECT event,date FROM clubXevent WHERE club LIKE "%CSSE-Club%") AS sub LIMIT 1
+SELECT person FROM clubXpeople WHERE position = "President" AND club LIKE "%Club%"
+SELECT person FROM clubXpeople WHERE position LIKE "%Vice President%" AND club LIKE "%Club%"
+SELECT person FROM clubXpeople WHERE position LIKE "%Secretary%" AND club LIKE "%Club%"
+SELECT person FROM clubXpeople WHERE position = "%Treasurer%" AND club LIKE "%Club%"
+SELECT email FROM club WHERE name like "%Club%"
