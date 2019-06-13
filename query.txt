@@ -10,7 +10,6 @@ A1|What is the [Club] club?|[Club-Description]
 A1|What is the homepage of the [Club] club?|The homepage is [Club-Website].
 A1|What is the box number of the [Club] club?|The box number to the [Club] club is [Box-Number].
 A1|What is the email for the [Club] club?|The email for the [Club] club is [Email].
-A1|What are the social media accounts for the [Club] club?|The Facebook page is [Facebook]. The Instagram account is [Instagram].
 A1|Are there any upcoming events for the [Stat-Club] club in the STAT department?|Yes. The next event is [Stat-Event] on [Date].
 A1|How many people follow the [Stat-Club] club’s Facebook page?|[Followers] people follow the [Stat-Club] club’s Facebook page.
 A1|Are there any new posts on the [Stat-Club] club’s Facebook page?|There are [Posts] new posts today and [Posts] posts in the past 30 days on the [Stat-Club] club’s Facebook page.
