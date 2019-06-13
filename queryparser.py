@@ -61,6 +61,10 @@ def parseQuery(input, questions, classifier):
                     while iis < len(inputSplit) and stop not in inputSplit[iis].lower():
                         var += inputSplit[iis] + " "
                         iis += 1
+                if var == "WISH":
+                    var = "Women Involved in Software and Hardware"
+                elif var == "Linux User Group":
+                    var = "Linux Users Group"
                 variable[varname] = var.strip()
                 var = ""
                 varname = ""
@@ -78,16 +82,6 @@ def createModel(questions):
     labeled = []
     for k, v in questions.items():
         labeled.append((v[0].lower(), k))
-    '''
-    i = 0
-    f = open("train.txt", "r")
-    for line in f.readlines():
-        i += 1
-        split = line.split("|")
-        for s in split:
-            labeled.append((s.lower(), i))
-    f.close()
-    '''
     labeled = [(getFeatures(q), num) for (q, num) in labeled]
     classifier = nltk.NaiveBayesClassifier.train(labeled)
     return classifier
