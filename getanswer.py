@@ -68,7 +68,7 @@ def normal_answer(query, questions):
                     result += str(row[(cursor.description)[0][0]]) + ', '
                 result = result[:-2]
                 if result == '':
-                    response = 'No.'
+                    response = 'No./There is no information.'
                 else:
                     response = res[0] + result + response.split(']')[1] 
 
@@ -79,7 +79,7 @@ def normal_answer(query, questions):
                     result.append(str(row[(cursor.description)[0][0]]))
                     resule.append(str(rpw[(cursor.description)[1][0]]))
                 if result == []:
-                    response = 'No.'
+                    response = 'No./There is no information.'
                 elif len(result) == 1 and result[0] == '':
                     result[0] = "NULL"
                 elif len(result) == 2 and result[0] == '':
