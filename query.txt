@@ -4,7 +4,7 @@ A1|Does [Faculty] advise any clubs in the [Department] department?|[Faculty] is 
 A1|Who is the advisor of the [Club] club?|[Faculty] is the advisor of the [Club] club.
 A1|What is the email of the president of the [Club] club?|[Person]’s email is [Email].
 A1|What type of club is the [Club] club?|It is a [Type] club.
-A1|What types of clubs does the [Department] department offer?|The [Deparment] department offers club in [Type].
+A1|What types of clubs does the [Department] department offer?|The [Department] department offers club in [Type].
 A1|What is the email for the advisor of the [Club] club?|[Faculty]’s email is [Email].
 A1|What is the [Club] club?|[Club-Description]
 A1|What is the homepage of the [Club] club?|The homepage is [Club-Website].

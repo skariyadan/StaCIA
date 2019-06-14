@@ -19,9 +19,12 @@ while endsignal == 0:
     if "bye" in query.lower():
         endsignal = 1
         break
-    parsedQuery = queryparser.parseQuery(query, question, classifier)
-    response = getanswer.getanswer(parsedQuery, question)
-    print(response)
+    try:
+        parsedQuery = queryparser.parseQuery(query, question, classifier)
+        response = getanswer.getanswer(parsedQuery, question)
+        print(response)
+    except:
+        print("Sorry, I don't know the answer to this!")
 print("\nGoodbye " + name + "! See you again soon!")
 
 
